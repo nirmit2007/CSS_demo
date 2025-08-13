@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <title>title</title>
+    <style>
+        body{
+            background-color:lightcyan;
+            height:100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .box{
+            border: 3px solid black;
+            border-radius: 5px;
+            width: 250px;
+            padding: 40px;
+            box-shadow: 5px 10px 5px olivedrab;
+            background-color:khaki;
+    
+        }
+        
+        .button{
+            background-color:darkolivegreen;
+            margin-left: 70px;
+            margin-top: 20px;
+            border: 2px solid black;
+            border-radius: 5px;
+        }  
+        .reset{
+            background-color:red;
+            border: 2px solid black;
+            border-radius: 5px;
+         }   
+             
+        lable{
+            display: block;
+        }
+        input[type="text"],[type="password"]{
+            padding: 8px;
+            margin-bottom: 10px;
+            width:100%;
+        }
+        .button:hover{
+            background-color: rgb(128, 216, 40);
+            cursor: pointer;
+        }
+        .reset:hover{
+            background-color:darksalmon;
+            cursor: pointer;
+        }
+        a:hover{
+            background-color:aqua;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        <form method="post">
+            <label for="username">Username :</label>
+            <input type="text" name="username" id="username">
+            <label for="password">Password :</label>
+            <input type="password" name="password" id="password">
+            <button class="button">Login</button>
+            <button class="reset">Reset</button><br><br>
+            <label class="new">New User ? </label><a href ="Register">Register</a>
+        </form>
+    </div>
+</body>
+</html>

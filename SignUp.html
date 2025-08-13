@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <title>Sign Up</title>
+    <style>
+      body{
+            background-color:lightcyan;
+            height:95%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        div{
+            border: 3px solid black;
+            border-radius: 10px;
+            width: 350px;
+            padding: 40px;
+            box-shadow: 5px 10px 5px olivedrab;
+            background-color:lightgoldenrodyellow
+        }
+        label{
+            display: block;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        input[type="text"], input[type="tel"], input[type="date"], input[type="password"]{
+            padding: 8px;
+            margin-bottom: 10px;
+            width:100%;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+        }
+        select{
+           width: 100%;
+           height: 30px;
+           border-radius: 5px;
+            border: 1px solid #ccc;
+        }
+        input[type="file"]{
+            border: 1px solid #ccc;
+            width: 100%;
+            padding: 5px;
+            border-radius: 5px;
+            background-color: white;
+        }
+        button{
+            background-color:darkslateblue;
+            margin-left: 70px;
+            margin-top: 20px;
+            border: 2px solid black;
+            border-radius: 5px;
+            padding: 10px 20px;
+            color: white;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+  <div>  
+    <h1 style="text-align: center;">Signup Form</h1><br>
+    <label>Full Name</label><br>
+    <input type="text" name="fullname"><br><br>
+    <label>Email</label><br>
+    <input type="text" name="email"><br><br>
+    <label>Mobile Number</label><br>
+    <input type="tel" name="tel" ><br><br>
+    <label>Date of Birth</label><br>
+    <input type="date" name="dob" ><br><br>
+    <label>Gender</label><br>
+    <input type="radio" name="gender" value="male">Male
+    <input type="radio" name="gender" value="female">Female
+    <input type="radio" name="gender" value="female">Other<br><br>
+    <label>City</label><br>
+      <select>
+        <option>--Select City--</option>
+        <option>Ahmedabad</option>
+        <option>Surat</option>
+      </select><br><br>
+    <label>Skills</label><br>
+    <input type="checkbox">Java
+    <input type="checkbox">Python
+    <input type="checkbox">HTML/CSS
+    <input type="checkbox">C/C++ <br><br>
+    <label>Address</label>
+    <textarea placeholder="Enter your full address..." rows="3" cols="30"></textarea><br><br>
+    <label>Upload Profile Photo</label><br>
+    <input type="file" value="Photo"><br><br>
+    <label>Password</label><br>
+    <input type="password" name="password"><br><br> 
+    <label> Confirm Password</label><br>
+    <input type="password" name="password"><br><br> 
+    <button>Sign Up</button>
+    <button>Clear</button>
+  </div> 
+</body>
+</html>
